@@ -1,0 +1,161 @@
+html {
+	box-sizing: border-box;
+	font-size: 62.5%;
+}
+*,
+*:before,
+*:after {
+	box-sizing: inherit;
+}
+body {
+	background: white;
+	font-family: 'Open Sans', sans-serif;
+	font-size: 1.6rem;
+	line-height: 2;
+}
+/*GLOBALES*/
+.contenedor {
+	width: 95%;
+	max-width: 1200px;
+	margin: 0 auto;
+}
+h1,
+h2,
+h3,
+h4 {
+	font-family: 'PT Sans', sans-serif;
+}
+h1 {
+	font-size: 4.8rem;
+}
+h2 {
+	font-size: 4rem;
+	line-height: 1.5;
+	text-align: center;
+}
+p {
+	text-align: center;
+	font-size: 1.8rem;
+	margin-top: .5rem;
+	padding: 2rem;
+}
+h3 {
+	font-size: 3.2rem;
+}
+h4 {
+	font-size: 2.8rem;
+}
+img {
+	max-width: 100%;
+}
+/*UTILIDADES*/
+.centrar-texto {
+	text-align: center;
+}
+.no-margin {
+	margin: 0;
+}
+
+/*HEADER*/
+@media (min-width: 768px) {
+	.barra {
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+	}
+}
+.site-header {
+	/*background-image: url(../img/banner.jpg)*/
+	background-repeat: no-repeat;
+	background-position: center center;
+	background-size: cover;
+	height: 60rem;
+}
+.site-header a {
+	color: black;
+	text-decoration: none;
+}
+.site-header h1 {
+	text-align: center;
+	font-weight: 400;
+}
+.site-header h1 span {
+	font-weight: 700;
+}
+/*BANNER*/
+.banner {
+	width: 1195px;
+	height: 500px;
+	border: 3px solid red;
+	margin: auto;
+	background-size: 100% 100%;
+	animation: banner 20s infinite;
+}
+@keyframes banner {
+	0%,
+	15% {
+		background-image: url(/img/1.jpg);
+		opacity: 1;
+	}
+	16%,
+	19% {
+		opacity: 0.1;
+	}
+	20%,
+	35% {
+		background-image: url(/img/2.jpg);
+		opacity: 1;
+	}
+	36%,
+	39% {
+		opacity: 0.1;
+	}
+	40%,
+	55% {
+		background-image: url(/img/3.jpg);
+		opacity: 1;
+	}
+	56%,
+	59% {
+		opacity: 0.1;
+	}
+	60%,
+	75% {
+		background-image: url(/img/4.jpg);
+		opacity: 1;
+	}
+	76%,
+	79% {
+		opacity: 0.1;
+	}
+	80%,
+	95% {
+		background-image: url(/img/5.jpg);
+		opacity: 1;
+	}
+	96%,
+	100% {
+		opacity: 0.1;
+	}
+}
+
+.logo img {
+	padding: 2rem;
+}
+
+/*Footer*/
+.site-footer {
+	background-color: white;
+	padding: 3rem;
+	margin-top: 4rem;
+}
+.site-footer p {
+	color: black;
+	font-size: 1.5rem;
+	font-weight: 400;
+	font-family: 'PT Sans', sans-serif;
+	text-align: center;
+}
+.site-footer p span {
+	font-weight: 700;
+}
